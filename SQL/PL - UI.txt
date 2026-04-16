@@ -1,0 +1,13 @@
+1. Display full summary of a case (IF-ELSIF-ELSE + Exception)
+2. FOR LOOP — Print all criminals and their case count
+3. GOTO — Skip processing if case is already closed
+4. List officers assigned to a specific case
+5. Cursor FOR LOOP — List all cases with evidence summary
+6. WHERE CURRENT OF — Update criminal status for closed-case criminals
+7. Parameterized cursor — Criminals in a given crime type
+8. Procedure — Assign officer to a case (with duplicate check)
+9. Procedure — List all criminals for a given FIR (IN param + cursor)
+10. Function — Return open case count for an officer
+11. Function — Return age of criminal from DOB
+12. Procedure with IN OUT — Close a case and return days it was open
+13. BEFORE INSERT trigger — Validate FIR data before insert

@@ -1,0 +1,37 @@
+1. List all FIRs with crime type name (column aliased), App context: Home dashboard showing recent FIRs
+2. List all criminal names in UPPER CASE with age,  App context: Formatted printout of criminals register
+3. Officers whose name contains 'Kumar' (LIKE / string ops), App context: Officer search box
+4. Replace NULL phone with 'Not Provided' (NVL), App context: Officer contact directory
+5. Show FIR date in multiple formats (TO_CHAR), App context: Report date formatting
+6. How long has each open case been running (date arithmetic), App context: Case aging report
+7. Investigator closes a case after verdict, App context: Case closure form
+Q8. List next day a court hearing falls on (NEXT_DAY), App context: Court calendar view
+Q9. UNION — Cases that are Open OR had a hearing this year, App context: Combined active-cases report
+Q10. INTERSECT — Cases that are Under Trial AND have evidence, App context: Cases ready for prosecution
+Q11. MINUS — Criminals linked to FIRs but NOT yet arrested, App context: Fugitive tracking list
+Q12. NOT EXISTS — Cases with no evidence logged yet, App context: Alert: cases needing urgent evidence collection
+Q13. IN / NOT IN — Officers who have NOT been assigned to any case, App context: Available officers for new case assignment
+Q14. SET COMPARISON (>=SOME) — Criminals older than at least one officer, App context: Age-based profile cross-reference
+Q15. Nested subquery — FIRs in locations that also have had court hearings, App context: Hotspot location analysis
+Q16. CREATE VIEW — Active case dashboard (officer + case + crime joined)
+Q17. CREATE VIEW — Crime summary by type
+Q18. GROUP BY — Number of FIRs per crime type, App context: Crime statistics bar chart data
+Q19. GROUP BY + HAVING — Departments with more than 1 active officer, App context: Department strength report
+Q20. ORDER BY ASC/DESC — All criminals sorted alphabetically, App context: Printed register of all criminals
+Q21. ORDER BY with JOIN — Evidence sorted by date collected (most recent first), App context: Evidence log for a specific case
+Q22. Derived Relation — Officer handling most open cases, App context: Workload distribution dashboard
+Q23. WITH clause — Cases open longer than the average (stale cases), App context: Flag cases needing senior review
+Q24. WITH clause — Departments where total officer experience > average, App context: Experienced team identification
+Q25. Repeat offenders — criminals in more than one FIR, App context: Serial criminal alert dashboard
+Q26. COMMIT / ROLLBACK / SAVEPOINT demo — Transfer lead officer, App context: Case reassignment with safe rollback
+-- If something goes wrong:
+-- ROLLBACK TO before_reassign;
+-- If all good:
+
+Q27. For each criminal, retrieve name and all FIRs they appear in (Supervisor-Supervisee style self-referencing, here criminal-FIR chain)
+
+Q28. For each case, show all officers and criminals involved, App context: Full case profile report
+
+Q29. Find total evidence items per case with crime type (Like "number of employees per project")
+
+Q30. Sum, Max, Min, Average — Evidence and case stats ,App context: Executive summary report for SP's office
