@@ -65,5 +65,5 @@ The system is normalized to 3rd Normal Form (3NF) to ensure zero redundancy. Key
 * Data Integrity: Strict Foreign Key enforcement for evidence and court proceedings.
 
 ---
-Developers:  Het Mehta, Yash Chaudhary ,C. Deepak,
+Developers:  Het R Mehta, Yash Chaudhary ,C. Deepak,
 Academic Context: Database Systems Lab (Manipal Institute of Technology)
